@@ -8,7 +8,7 @@ from fastapi import FastAPI, Response
 # from firebase_admin import credentials
 app = FastAPI()
 
-@app.get('/myapp')
+@app.get('/')
 
 def whole_functi(response: Response):
     response.headers["Access-Control-Allow-Origin"] = "*"
