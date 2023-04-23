@@ -12,7 +12,7 @@ app = FastAPI()
 
 def whole_functi(response: Response):
 #     response.headers["Access-Control-Allow-Origin"] = "*"
-#     serv_obj = Service("/Users/the_shravanzz/Documents/Python Project/Python Selinium Drivers/chromedriver_mac64/chromedriver.exe")
+#     serv_obj = Service("chromedriver_mac64/chromedriver.exe")
 #     options = webdriver.ChromeOptions()
 #     options.add_experimental_option("detach", True)
 #     # cred = credentials.Certificate("path/to/serviceAccountKey.json")
