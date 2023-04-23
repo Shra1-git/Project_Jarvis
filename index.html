@@ -4,7 +4,32 @@
     </head>
     <body>
         <h1>Consider below Condition:</h1></body></n>
-        <p id = "mycondition"> A.Date < B.Date </p>
+        <!-- <p id = "mycondition">DVR: A.ADate < B.BDate </p>
+        <p> Query text: Start Date is less than End Date</p> -->
+        <p id = "mycondition">DVR: A.ADate > B.BDate </p>
+        <p> Query text: Start Date is greater than End Date</p>
+        <!-- <p id = "mycondition">DVR: A.ADate <> B.BDate </p>
+        <p> Query text: Start Date is not equal to End Date</p> -->
 
+       <br>
+       <button id = "my-button"> Click Me</button>
+        <br>
+        <p id = "inserthere"></p>
     </body>
+<script>
+const button = document.getElementById('my-button');
+
+button.addEventListener('click', function () {
+    fetch('https://demoalsdb.web.app/myapp')
+        .then(res  => {
+            return res.json();
+        }).then(data => {
+            document.getElementById("inserthere").insertAdjacentHTML('beforeend',data);
+        })
+        .catch(err => console.log(err));
+});
+
+</script>
+
+
 </html>
