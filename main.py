@@ -19,7 +19,7 @@ def whole_functi(response: Response):
     # firebase_admin.initialize_app(cred)
     driver = webdriver.Chrome(options=options, service=serv_obj)
 
-    driver.get("file:///Users/the_shravanzz/Documents/Python Project/Project_Jarvis/index.html")
+    driver.get("https://demoalsdb.firebaseapp.com/")
 
 
 
