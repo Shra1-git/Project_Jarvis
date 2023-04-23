@@ -13,11 +13,11 @@ app = FastAPI()
 def whole_functi(response: Response):
     response.headers["Access-Control-Allow-Origin"] = "*"
     serv_obj = Service("chromedriver_mac64/chromedriver.exe")
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option("detach", True)
-    # cred = credentials.Certificate("path/to/serviceAccountKey.json")
-    # firebase_admin.initialize_app(cred)
-    driver = webdriver.Chrome(options=options, service=serv_obj)
+#     options = webdriver.ChromeOptions()
+#     options.add_experimental_option("detach", True)
+#     # cred = credentials.Certificate("path/to/serviceAccountKey.json")
+#     # firebase_admin.initialize_app(cred)
+#     driver = webdriver.Chrome(options=options, service=serv_obj)
 
 #     driver.get("https://demoalsdb.firebaseapp.com/")
 
@@ -59,21 +59,21 @@ def whole_functi(response: Response):
 #     print(rightformoid)
 #     print(rightfeildoid)
 
-#     #python connection to DB
+    #python connection to DB
 
-#     config = {
-#       "apiKey": "AIzaSyD25yD0pWMy-N1B-6vcHneFZrmqoR35ZBA",
-#       "authDomain": "demoalsdb.firebaseapp.com",
-#       "projectId": "demoalsdb",
-#        "databaseURL": "https://demoalsdb-default-rtdb.firebaseio.com",
-#       "storageBucket": "demoalsdb.appspot.com",
-#       "messagingSenderId": "1013997483088",
-#       "appId": "1:1013997483088:web:110f3cfb8ee67d2d6d8d55",
-#       "measurementId": "G-24DH0PNWZP"
-#     }
+    config = {
+      "apiKey": "AIzaSyD25yD0pWMy-N1B-6vcHneFZrmqoR35ZBA",
+      "authDomain": "demoalsdb.firebaseapp.com",
+      "projectId": "demoalsdb",
+       "databaseURL": "https://demoalsdb-default-rtdb.firebaseio.com",
+      "storageBucket": "demoalsdb.appspot.com",
+      "messagingSenderId": "1013997483088",
+      "appId": "1:1013997483088:web:110f3cfb8ee67d2d6d8d55",
+      "measurementId": "G-24DH0PNWZP"
+    }
 
-#     firebase = pyrebase.initialize_app(config)
-#     database = firebase.database()
+    firebase = pyrebase.initialize_app(config)
+    database = firebase.database()
 
 #     # data = {"ADate": "Start Date", "Ddate": "End Date", "CDate": "Start Date", "BDate": "End Date"}
 #     #
