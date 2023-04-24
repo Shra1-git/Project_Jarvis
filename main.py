@@ -15,7 +15,7 @@ def whole_functi(response: Response):
 #     serv_obj = Service("chromedriver_mac64/chromedriver.exe")
     # cred = credentials.Certificate("path/to/serviceAccountKey.json")
     # firebase_admin.initialize_app(cred)
-    driver = webdriver.Chrome()
+#     driver = webdriver.Chrome()
 
 #     driver.get("https://demoalsdb.firebaseapp.com/")
 
